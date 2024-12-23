@@ -1,0 +1,50 @@
+.myBtn, #header button {
+  background-color: rgb(149, 143, 235);
+  color: white;
+  font-size: 20px;
+  border-radius: 15px;
+}
+
+#header {
+  background-color: #f5b041;
+  color: #f4f6f7;
+  text-shadow: 2px 2px #5a5cd4;
+}
+#header button:hover {
+  background-color: #afe6db;
+}
+
+#navbar {
+  background-color: #45b39d;
+  color: #f4f6f7;
+}
+#navbar ul {
+  margin: 0px;
+}
+#navbar ul li {
+  padding: 20px;
+  text-decoration: none;
+  display: inline-flex;
+  font-size: 20px;
+  cursor: pointer;
+}
+#navbar ul li:hover {
+  background-color: #afe6db;
+  color: #1c2833;
+}
+
+.sideBar {
+  background-color: #3498db;
+  color: #f4f6f7;
+}
+
+.content {
+  color: #17202a;
+  background-color: #eaeded;
+  font-size: 17px;
+}
+
+#footer {
+  background-color: #f5b041;
+  color: #f4f6f7;
+}/*# sourceMappingURL=index.css.map */

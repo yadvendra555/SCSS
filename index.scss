@@ -1,0 +1,65 @@
+//importing partials
+@import "_variables.scss";
+@import "_mixins.scss";
+@import "_button.scss";
+
+
+
+//Example of mixins parameter
+@mixin headerShadow($para) {
+    text-shadow: 2px 2px $para;
+}
+
+
+
+#header {
+    @include headerFooter;
+    @include headerShadow(#5a5cd4); //Example of mixins parameter
+    button{
+        @extend .myBtn;//Example of extend and Inheritance
+        &:hover {
+            background-color:$navbarHoverBackgroundColor;
+        }
+    }
+}
+
+#navbar {
+    background-color: $navbarBackgroundColor;
+    color: $FontColor;
+
+    //nexting
+    ul {
+        margin: 0px;
+
+        //nexting
+        li {
+            padding: 20px;
+            text-decoration: none;
+            display: inline-flex;
+            font-size: 20px;
+            cursor: pointer;
+
+            //nexting with pesudo classes
+            &:hover {
+                background-color: $navbarHoverBackgroundColor;
+                color: #1c2833;
+            }
+        }
+
+    }
+}
+
+.sideBar {
+    background-color: $sidebarBackgroundColor;
+    color: $FontColor;
+}
+
+.content {
+    color: $contentFontColor;
+    background-color: $contentBackgroundColor;
+    font-size: $contentFontSize;
+}
+
+#footer {
+    @include headerFooter;
+}

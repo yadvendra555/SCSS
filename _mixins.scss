@@ -1,0 +1,6 @@
+//Create mixins
+@mixin headerFooter () {
+    background-color: $headerFooterBackgroundColor;
+    color: $FontColor;
+}
+
